@@ -1,0 +1,367 @@
+*{
+    box-sizing: border-box;
+}
+@keyframes bouncing {
+    0%{
+        transition: 2s;
+        top: 29rem;
+    }
+    30%{
+        transition: 2s;
+        top: 27rem;
+    }
+
+    50%{
+        transition: 2s;
+        top: 29rem;
+    }
+
+    70%{
+        transition: 2s;
+        top: 27rem;
+    }
+
+    80%{
+        transition: 2s;
+        top: 29rem;
+    }
+
+    100%{
+        transition: 2s;
+        top: 27rem;
+    }
+
+    
+}
+
+@keyframes verticals {
+    0%{
+        opacity: 1rem;
+        transform:translateX(-42rem);
+    }
+
+    
+
+}
+html{
+    background-color: rgb(19, 0, 19);
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p{
+    color: #fff;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    position: relative;
+}
+
+nav .logo{
+    width: 5%;
+    cursor: pointer;
+}
+nav input{
+    background: transparent;
+    padding: 1rem 13rem;
+    position: relative;
+    margin-top: 1rem;
+    border: 1px solid #fff;
+    color: white;
+    transition: 1s;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+.searchDiv{
+    width: 100%;
+}
+
+nav input:hover{
+    border: 1px solid rgba(128, 128, 128, 0.387);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    
+}
+
+nav input:focus{
+    cursor:help;
+    border: 1px solid rgba(128, 128, 128, 0.387);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+nav input::placeholder{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+
+nav input:active{
+    border: 1px solid rgba(128, 128, 128, 0.387);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.searchDiv button{
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 3rem;
+    left: 71rem;
+    cursor: pointer;
+}
+
+.register button{
+    margin: 0;
+    position: absolute;
+    top: 29rem;
+    left: 3rem;
+    padding: .5rem 4rem;
+    background: transparent;
+    color: white;
+    border: none;
+    border: 1px solid rgb(157, 47, 157);
+    transition: all 1s;
+    animation: bouncing 10s;
+    animation-iteration-count: 4;
+}
+
+.register button:hover{
+    background:transparent;
+    border: .5px solid #fff;
+    color: rgb(157, 47, 157);
+    cursor: pointer;
+}
+
+.register button:active{
+    cursor: progress;
+}
+
+.menu-bar{
+    display: none;
+}
+
+label{
+    color: #fff;
+}
+
+.form{
+    width: 30%;
+    border: 1px solid #fff;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    
+}
+
+.form input{
+    width: 100%;
+    padding: .7rem 1rem;
+    margin-bottom: .5rem;
+    background: transparent;
+    border: none;
+    border: 1px solid gray;
+    color: white;
+}
+
+input[type=radio] {
+    cursor: pointer;
+}
+
+textarea{
+    width: 100%;
+    background: transparent;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.form button{
+    width: 100%;
+    background-color: #ed3237;
+    border: none;
+    color: white;
+    padding: .7rem 0;
+    border-radius: .5rem;
+}
+
+.toggleEvent{
+    display: none;
+}
+
+.displyEvent{
+    display: block;
+}
+
+header p{
+    color:#fff;
+    position: absolute;
+    top: 23rem;
+    bottom: 0;
+    left: 3rem;
+    width: 40%;
+}
+
+header span{
+    color: #ed3237;
+}
+
+header h1{
+    color:#fff;
+    font-size: 4rem;
+    position:absolute;
+    left: 3rem;
+}
+
+header .main-img{
+    margin-left: 39rem;
+    margin-top: -5rem;
+}
+
+.main-header{
+    margin-top: 10rem;
+}
+.body{
+    position: relative;
+}
+.bodyHeader h1{
+    color:rgb(157, 47, 157) ;
+}
+
+.bodyMain{
+    width: 100%;
+    text-align: justify;
+}
+
+.bodyMain p{
+    color: #b6b6b6;
+}
+
+
+
+.verticalLines, .switcher{
+    background-color: rgb(157, 47, 157);
+    width: 2px;
+    height: 7rem;
+    margin-left: 12rem;
+    border-radius: 1rem;
+}
+
+.switcher{
+    margin-left: 4rem;
+    margin-top: -6.6rem;
+}
+
+hr{
+    border: 1rem solid rgb(157, 47, 157);
+    border-bottom: none;
+    border-style: dotted;
+    width: 30%;
+    margin-top: 10rem;
+    border-width: 100%;
+    font-size: 4rem;
+    animation:verticals 1s ;
+}
+
+.body{
+    margin-top: 15rem;
+    position: relative;
+}
+
+.bodyMainImg{
+    width: 50%;
+    margin-top: -10rem;
+}
+
+.bodyDetails{
+    position: absolute;
+    left: 44rem;
+    top: -3rem;
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.target{
+    position: relative;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+.target h1{
+    color: white;
+    margin-top: 5rem;
+    text-align: center;
+    
+}
+
+.rounded-button {
+    background-color: rgb(157, 47, 157);
+    width: 2%;
+    color: white;
+    height: 10%;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 39.3rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.margin{
+    margin-left: 40rem;
+}
+
+.leftP{
+    color: #fff;
+    font-weight: 400;
+    position: absolute;
+    left: 7rem;
+    top: 3.5rem;
+}
+
+.leftT {
+    color: #fff;
+    font-weight: 400;
+    position: absolute;
+    left: 6rem;
+    top: 28rem;
+}
+
+.rightP{
+    color: #fff;
+    font-weight: 400;
+    position: absolute;
+    left: 12rem;
+    top: 15.5rem;
+}
+
+.mainTarget{
+    margin-left: -15rem;
+}
+
+.gathering{
+    margin-left: 33rem;
+    margin-top: -27.5rem;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(32, 4, 32);
+    padding: 1rem 2rem;
+}
+
+footer p{
+    color: gray;
+}
