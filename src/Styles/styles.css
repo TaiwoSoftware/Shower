@@ -1,367 +1,385 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 @keyframes bouncing {
-    0%{
-        transition: 2s;
-        top: 29rem;
-    }
-    30%{
-        transition: 2s;
-        top: 27rem;
-    }
+  0% {
+    transition: 2s;
+    top: 29rem;
+  }
+  30% {
+    transition: 2s;
+    top: 27rem;
+  }
 
-    50%{
-        transition: 2s;
-        top: 29rem;
-    }
+  50% {
+    transition: 2s;
+    top: 29rem;
+  }
 
-    70%{
-        transition: 2s;
-        top: 27rem;
-    }
+  70% {
+    transition: 2s;
+    top: 27rem;
+  }
 
-    80%{
-        transition: 2s;
-        top: 29rem;
-    }
+  80% {
+    transition: 2s;
+    top: 29rem;
+  }
 
-    100%{
-        transition: 2s;
-        top: 27rem;
-    }
-
-    
+  100% {
+    transition: 2s;
+    top: 27rem;
+  }
 }
 
 @keyframes verticals {
-    0%{
-        opacity: 1rem;
-        transform:translateX(-42rem);
-    }
-
-    
-
+  0% {
+    opacity: 1rem;
+    transform: translateX(-42rem);
+  }
 }
-html{
-    background-color: rgb(19, 0, 19);
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+html {
+  background-color: rgb(19, 0, 19);
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-body{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-p{
-    color: #fff;
+p {
+  color: #fff;
 }
 
-nav{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 3rem;
-    position: relative;
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  position: relative;
 }
 
-nav .logo{
-    width: 5%;
-    cursor: pointer;
+nav .logo {
+  width: 5%;
+  cursor: pointer;
 }
-nav input{
-    background: transparent;
-    padding: 1rem 13rem;
-    position: relative;
-    margin-top: 1rem;
-    border: 1px solid #fff;
-    color: white;
-    transition: 1s;
-    width: 100%;
-    border-left: none;
-    border-right: none;
-    border-top: none;
+nav input {
+  background: transparent;
+  padding: 1rem 13rem;
+  position: relative;
+  margin-top: 1rem;
+  border: 1px solid #fff;
+  color: white;
+  transition: 1s;
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  outline: none;
 }
-.searchDiv{
-    width: 100%;
-}
-
-nav input:hover{
-    border: 1px solid rgba(128, 128, 128, 0.387);
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    
+.searchDiv {
+  width: 100%;
 }
 
-nav input:focus{
-    cursor:help;
-    border: 1px solid rgba(128, 128, 128, 0.387);
-    border-left: none;
-    border-right: none;
-    border-top: none;
+nav input:hover {
+  border: 1px solid rgba(128, 128, 128, 0.387);
+  border-left: none;
+  border-right: none;
+  border-top: none;
 }
 
-nav input::placeholder{
-    text-align: center;
-    font-size: 1.5rem;
+nav input:focus {
+  cursor: help;
+  border: 1px solid rgba(128, 128, 128, 0.387);
+  border-left: none;
+  border-right: none;
+  border-top: none;
 }
 
-
-
-nav input:active{
-    border: 1px solid rgba(128, 128, 128, 0.387);
-    border-left: none;
-    border-right: none;
-    border-top: none;
+nav input::placeholder {
+  text-align: center;
+  font-size: 1.5rem;
 }
 
-.searchDiv button{
-    background: transparent;
-    border: none;
-    position: absolute;
-    top: 3rem;
-    left: 71rem;
-    cursor: pointer;
+nav input:active {
+  border: 1px solid rgba(128, 128, 128, 0.387);
+  border-left: none;
+  border-right: none;
+  border-top: none;
 }
 
-.register button{
-    margin: 0;
-    position: absolute;
-    top: 29rem;
-    left: 3rem;
-    padding: .5rem 4rem;
-    background: transparent;
-    color: white;
-    border: none;
-    border: 1px solid rgb(157, 47, 157);
-    transition: all 1s;
-    animation: bouncing 10s;
-    animation-iteration-count: 4;
+.searchDiv button {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 3rem;
+  left: 71rem;
+  cursor: pointer;
 }
 
-.register button:hover{
-    background:transparent;
-    border: .5px solid #fff;
-    color: rgb(157, 47, 157);
-    cursor: pointer;
+.register button {
+  margin: 0;
+  position: absolute;
+  top: 29rem;
+  left: 3rem;
+  padding: 0.5rem 4rem;
+  background: transparent;
+  color: white;
+  border: none;
+  border: 1px solid rgb(157, 47, 157);
+  transition: all 1s;
+  animation: bouncing 10s;
+  animation-iteration-count: 4;
 }
 
-.register button:active{
-    cursor: progress;
+.register button:hover {
+  background: transparent;
+  border: 0.5px solid #fff;
+  color: rgb(157, 47, 157);
+  cursor: pointer;
 }
 
-.menu-bar{
-    display: none;
+.register button:active {
+  cursor: progress;
 }
 
-label{
-    color: #fff;
+.menu-bar {
+  display: none;
 }
 
-.form{
-    width: 30%;
-    border: 1px solid #fff;
-    padding: 1rem 1rem;
-    border-radius: 1rem;
-    
+label {
+  color: #fff;
 }
 
-.form input{
-    width: 100%;
-    padding: .7rem 1rem;
-    margin-bottom: .5rem;
-    background: transparent;
-    border: none;
-    border: 1px solid gray;
-    color: white;
+.form {
+  width: 30%;
+  border: 1px solid #fff;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
 }
 
-input[type=radio] {
-    cursor: pointer;
+.form input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  margin-bottom: 0.5rem;
+  background: transparent;
+  border: none;
+  border: 1px solid gray;
+  color: white;
 }
 
-textarea{
-    width: 100%;
-    background: transparent;
-    margin-bottom: 1rem;
-    color: white;
+input[type="radio"] {
+  cursor: pointer;
 }
 
-.form button{
-    width: 100%;
-    background-color: #ed3237;
-    border: none;
-    color: white;
-    padding: .7rem 0;
-    border-radius: .5rem;
+textarea {
+  width: 100%;
+  background: transparent;
+  margin-bottom: 1rem;
+  color: white;
 }
 
-.toggleEvent{
-    display: none;
+.form button {
+  width: 100%;
+  background-color: #ed3237;
+  border: none;
+  color: white;
+  padding: 0.7rem 0;
+  border-radius: 0.5rem;
 }
 
-.displyEvent{
-    display: block;
+.toggleEvent {
+  display: none;
 }
 
-header p{
-    color:#fff;
-    position: absolute;
-    top: 23rem;
-    bottom: 0;
-    left: 3rem;
-    width: 40%;
+.displyEvent {
+  display: block;
 }
 
-header span{
-    color: #ed3237;
+header p {
+  color: #fff;
+  position: absolute;
+  top: 23rem;
+  bottom: 0;
+  left: 3rem;
+  width: 40%;
 }
 
-header h1{
-    color:#fff;
-    font-size: 4rem;
-    position:absolute;
-    left: 3rem;
+header span {
+  color: #ed3237;
 }
 
-header .main-img{
-    margin-left: 39rem;
-    margin-top: -5rem;
+header h1 {
+  color: #fff;
+  font-size: 4rem;
+  position: absolute;
+  left: 3rem;
 }
 
-.main-header{
-    margin-top: 10rem;
-}
-.body{
-    position: relative;
-}
-.bodyHeader h1{
-    color:rgb(157, 47, 157) ;
+header .main-img {
+  margin-left: 39rem;
+  margin-top: -5rem;
 }
 
-.bodyMain{
-    width: 100%;
-    text-align: justify;
+.main-header {
+  margin-top: 10rem;
+}
+.body {
+  position: relative;
+}
+.bodyHeader h1 {
+  color: rgb(157, 47, 157);
 }
 
-.bodyMain p{
-    color: #b6b6b6;
+.bodyMain {
+  width: 100%;
+  text-align: justify;
 }
 
-
-
-.verticalLines, .switcher{
-    background-color: rgb(157, 47, 157);
-    width: 2px;
-    height: 7rem;
-    margin-left: 12rem;
-    border-radius: 1rem;
+.bodyMain p {
+  color: #b6b6b6;
 }
 
-.switcher{
-    margin-left: 4rem;
-    margin-top: -6.6rem;
+.verticalLines,
+.switcher {
+  background-color: rgb(157, 47, 157);
+  width: 2px;
+  height: 7rem;
+  margin-left: 12rem;
+  border-radius: 1rem;
 }
 
-hr{
-    border: 1rem solid rgb(157, 47, 157);
-    border-bottom: none;
-    border-style: dotted;
-    width: 30%;
-    margin-top: 10rem;
-    border-width: 100%;
-    font-size: 4rem;
-    animation:verticals 1s ;
+.switcher {
+  margin-left: 4rem;
+  margin-top: -6.6rem;
 }
 
-.body{
-    margin-top: 15rem;
-    position: relative;
+hr {
+  border: 1rem solid rgb(157, 47, 157);
+  border-bottom: none;
+  border-style: dotted;
+  width: 30%;
+  margin-top: 10rem;
+  border-width: 100%;
+  font-size: 4rem;
+  animation: verticals 1s;
 }
 
-.bodyMainImg{
-    width: 50%;
-    margin-top: -10rem;
+.body {
+  margin-top: 15rem;
+  position: relative;
 }
 
-.bodyDetails{
-    position: absolute;
-    left: 44rem;
-    top: -3rem;
-    width: 40%;
-    box-sizing: border-box;
+.bodyMainImg {
+  width: 50%;
+  margin-top: -10rem;
 }
 
-.target{
-    position: relative;
-    margin-bottom: 4rem;
-    margin-top: 4rem;
+.bodyDetails {
+  position: absolute;
+  left: 44rem;
+  top: -3rem;
+  width: 40%;
+  box-sizing: border-box;
 }
 
-.target h1{
-    color: white;
-    margin-top: 5rem;
-    text-align: center;
-    
+.target {
+  position: relative;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.target h1 {
+  color: white;
+  margin-top: 5rem;
+  text-align: center;
 }
 
 .rounded-button {
-    background-color: rgb(157, 47, 157);
-    width: 2%;
-    color: white;
-    height: 10%;
-    border-radius: 50%;
-    text-align: center;
-    margin-left: 39.3rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+  background-color: rgb(157, 47, 157);
+  width: 2%;
+  color: white;
+  height: 10%;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 39.3rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
-.margin{
-    margin-left: 40rem;
+.margin {
+  margin-left: 40rem;
 }
 
-.leftP{
-    color: #fff;
-    font-weight: 400;
-    position: absolute;
-    left: 7rem;
-    top: 3.5rem;
+.leftP {
+  color: #fff;
+  font-weight: 400;
+  position: absolute;
+  left: 7rem;
+  top: 3.5rem;
 }
 
 .leftT {
-    color: #fff;
-    font-weight: 400;
-    position: absolute;
-    left: 6rem;
-    top: 28rem;
+  color: #fff;
+  font-weight: 400;
+  position: absolute;
+  left: 6rem;
+  top: 28rem;
 }
 
-.rightP{
-    color: #fff;
-    font-weight: 400;
-    position: absolute;
-    left: 12rem;
-    top: 15.5rem;
+.rightP {
+  color: #fff;
+  font-weight: 400;
+  position: absolute;
+  left: 12rem;
+  top: 15.5rem;
 }
 
-.mainTarget{
-    margin-left: -15rem;
+.mainTarget {
+  margin-left: -15rem;
 }
 
-.gathering{
-    margin-left: 33rem;
-    margin-top: -27.5rem;
+.gathering {
+  margin-left: 33rem;
+  margin-top: -27.5rem;
 }
 
 footer {
-    text-align: center;
-    background-color: rgb(32, 4, 32);
-    padding: 1rem 2rem;
+  text-align: center;
+  background-color: rgb(32, 4, 32);
+  padding: 1rem 2rem;
 }
 
-footer p{
-    color: gray;
+footer p {
+  color: gray;
+}
+
+/* Responsiveness */
+@media (max-width: 1030px) {
+  .searchDiv button {
+    left: 56rem;
+  }
+
+  header .main-img {
+    margin-left: 35rem;
+    width: 40%;
+  }
+
+  .bodyMainImg {
+    width: 40%;
+    margin-top: -10rem;
+  }
+  .two{
+    display: none;
+  }
+
+  .verticalLines{
+    display: none;
+  }
+
+  .switcher{
+    display: none;
+  }
 }
