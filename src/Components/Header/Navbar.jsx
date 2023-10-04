@@ -1,12 +1,15 @@
 import { useState } from "react";
-import MobileRegister from "../MobileRegister";
 import menu from "../images/Menu.svg";
 import icon from "../images/Search.svg"
+import FormContainer from "../FormContainer";
+import Header from "./Header";
 const Navbar = ({ img }) => {
   const [isToggled, setIsToggled] = useState(true);
+  const [isShowing, setIsShowing] = useState(false);
 
   const handleToggle = () => {
     setIsToggled(!isToggled)
+    setIsShowing(!isShowing)
   }
 
   return (
@@ -19,11 +22,12 @@ const Navbar = ({ img }) => {
           </button>
         </div>
         <div className="register">
-          <img src={menu} alt="Menu-bar" className="menu-bar" />
+          <img src={menu} onClick={handleToggle} alt="Menu-bar" className="menu-bar" />
         </div>
       </nav>
 
-      <MobileRegister toggle={isToggled ? 'toggleEvent':'displyEvent'} />
+      <FormContainer toggle={isToggled ? 'toggleEvent':'displyEvent'} />
+      <Header toggle={isShowing ? 'show' :'shower'} />
       {/* <MobileRegister toggle={isClicked} /> */}
       {/* {isClicked === true ? <MobileRegister toggle="displayEvent" /> : <MobileRegister toggle="toggleEvent" />} */}
       {/* {<MobileRegister toggle={display}  />} */}

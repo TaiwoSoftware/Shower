@@ -1,9 +1,9 @@
 import logo from '../image/logo.png'
 import HeaderDetails from './HeaderDetails';
 import Navbar from './Navbar';
-const Header = () => {
+const Header = ({toggle}) => {
     return (
-        <header>
+        <header className={toggle}>
             <Navbar img={logo} />
             <HeaderDetails />
         </header>
