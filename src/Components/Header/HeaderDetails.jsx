@@ -1,9 +1,10 @@
 import HeaderImg from "./HeaderImg";
 import RegisterButton from "./RegisterButton";
 
-const HeaderDetails = () => {
+const HeaderDetails = ({toggleHeader}) => {
   return (
-    <div className="main-header">
+    <div className={toggleHeader}>
+      <div className="main-header">
       <div className="header">
         <h1>SHOWER</h1>
         <p>
@@ -13,6 +14,7 @@ const HeaderDetails = () => {
       </div>
       <HeaderImg />
       <RegisterButton title="Check " />
+    </div>
     </div>
   );
 };

@@ -516,13 +516,6 @@ footer p {
   .searching{
     margin-top: -4rem;
   }
-  .toggleEvent {
-    display: none;
-  }
-  
-  .displayEvent {
-    display: block;
-  }
 
   .toggler button{
     background:transparent;
@@ -537,4 +530,31 @@ footer p {
     position: absolute;
   }
 
+  .again{
+    cursor: pointer;
+  }
+
+  .again:hover{
+    color: red;
+  }
+
+  .form{
+    width: 10%;
+    background-color: red;
+    position: absolute;
+  }
+
+
+
+  .form button{
+    width: 10%;
+  }
+
+  .displayHeader{
+    display: none;
+  }
+
+  .toggleHeader{
+    display: block;
+  }
 }
