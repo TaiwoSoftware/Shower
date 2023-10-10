@@ -1,16 +1,22 @@
 import { useState } from "react";
 import menu from "../images/Menu.svg";
-import icon from "../images/Search.svg"
+import icon from "../images/Search.svg";
+import MobileRegister from "../MobileRegister";
 import FormContainer from "../FormContainer";
-import Header from "./Header";
 const Navbar = ({ img }) => {
   const [isToggled, setIsToggled] = useState(true);
   const [isShowing, setIsShowing] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
 
   const handleToggle = () => {
-    setIsToggled(!isToggled)
-    setIsShowing(!isShowing)
-  }
+    if (window.innerWidth <= 900) {
+      console.log('Your browser width is less than 900');
+      // setIsToggled(!isToggled);
+      // setIsShowing(!isShowing);
+      setIsClicked(!isClicked);
+
+    }
+  };
 
   return (
     <div>
@@ -22,14 +28,13 @@ const Navbar = ({ img }) => {
           </button>
         </div>
         <div className="register">
-          <img src={menu} onClick={handleToggle} alt="Menu-bar" className="menu-bar" />
+        <img src={menu} onClick={handleToggle} alt="Menu-bar" className="menu-bar "/> 
+          
         </div>
       </nav>
 
-      <FormContainer toggle={isToggled ? 'toggleEvent':'displyEvent'} />
-      <Header toggle={isShowing ? 'show' :'shower'} />
-      {/* <MobileRegister toggle={isClicked} /> */}
       {/* {isClicked === true ? <MobileRegister toggle="displayEvent" /> : <MobileRegister toggle="toggleEvent" />} */}
+      {isClicked === true ? <FormContainer toggli="displayEvent"/> : <FormContainer toggli="toggleEvent" />}
       {/* {<MobileRegister toggle={display}  />} */}
     </div>
   );

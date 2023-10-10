@@ -200,7 +200,7 @@ textarea {
   display: none;
 }
 
-.displyEvent {
+.displayEvent {
   display: block;
 }
 
@@ -247,7 +247,6 @@ header .main-img {
 .bodyMain p {
   color: #b6b6b6;
 }
-
 .verticalLines,
 .switcher {
   background-color: rgb(157, 47, 157);
@@ -469,7 +468,7 @@ footer p {
   .menu-bar{
     margin-left: 46rem;
     cursor: pointer;
-    display: block;
+    display: block; 
   }
   .searchDiv {
     display: none;
@@ -493,6 +492,49 @@ footer p {
 
   .gathering{
     left: -4rem;
+  }
+
+  .toggler{
+    padding: 1rem 1rem;
+    position: relative;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+
+  .toggler img{
+    margin-left: 5.5rem;
+    margin-top: -1.5rem;
+  }
+
+  .toggler p{
+    position: absolute;
+    top: -4.1rem;
+    left: -6rem;
+    text-align: center;
+  }
+
+  .searching{
+    margin-top: -4rem;
+  }
+  .toggleEvent {
+    display: none;
+  }
+  
+  .displayEvent {
+    display: block;
+  }
+
+  .toggler button{
+    background:transparent;
+    border: none;
+    color: white;
+    border: 1px solid white;
+    padding: .5rem 2rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    left: 9rem;
+    top: -4.1rem;
+    position: absolute;
   }
 
 }
