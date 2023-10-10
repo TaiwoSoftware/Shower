@@ -45,9 +45,9 @@ const Navbar = () => {
       )}
       
       {displayHeader === true ? (
-          <HeaderDetails toggleHeader="displayHeader" />
-        ) : (
           <HeaderDetails toggleHeader="toggleHeader" />
+        ) : (
+          <HeaderDetails toggleHeader="displayHeader" />
         )}
     </div>
   );
