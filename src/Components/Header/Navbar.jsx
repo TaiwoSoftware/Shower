@@ -5,8 +5,6 @@ import MobileRegister from "../MobileRegister";
 import FormContainer from "../FormContainer";
 import HeaderDetails from "./HeaderDetails";
 const Navbar = () => {
-  const [isToggled, setIsToggled] = useState(true);
-  const [isShowing, setIsShowing] = useState(false);
   const [displayHeader, setDisplayHeader] = useState(false);
 
   const [isClicked, setIsClicked] = useState(false);
@@ -16,6 +14,10 @@ const Navbar = () => {
       console.log(`Your browser width is  ${window.innerWidth}`);
       setIsClicked(!isClicked);
     }
+  };
+  const handleClickAgain = () => {
+    setRegister(!register);
+    setDisplayHeader(!displayHeader);
   };
 
   return (
@@ -41,11 +43,12 @@ const Navbar = () => {
       ) : (
         <FormContainer toggli="toggleEvent" />
       )}
+      
       {displayHeader === true ? (
-        <HeaderDetails toggleHeader="displayHeader" />
-      ) : (
-        <HeaderDetails toggleHeader="toggleHeader" />
-      )}
+          <HeaderDetails toggleHeader="displayHeader" />
+        ) : (
+          <HeaderDetails toggleHeader="toggleHeader" />
+        )}
     </div>
   );
 };

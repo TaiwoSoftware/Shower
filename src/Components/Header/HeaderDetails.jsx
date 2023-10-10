@@ -14,6 +14,7 @@ const HeaderDetails = ({toggleHeader}) => {
       </div>
       <HeaderImg />
       <RegisterButton title="Check " />
+      
     </div>
     </div>
   );
