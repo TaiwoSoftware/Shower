@@ -5,7 +5,7 @@ import MobileRegister from "../MobileRegister";
 import FormContainer from "../FormContainer";
 import HeaderDetails from "./HeaderDetails";
 const Navbar = () => {
-  const [displayHeader, setDisplayHeader] = useState(false);
+ 
 
   const [isClicked, setIsClicked] = useState(false);
 
@@ -24,7 +24,7 @@ const Navbar = () => {
     <div>
       <nav>
         <div className="searchDiv">
-          <input type="search" placeholder="What are you looking for" />
+          <input type="text" placeholder="What are you looking for" />
           <button type="submit">
             <img src={icon} alt="search-icon" />
           </button>
@@ -44,11 +44,6 @@ const Navbar = () => {
         <FormContainer toggli="toggleEvent" />
       )}
       
-      {displayHeader === true ? (
-          <HeaderDetails toggleHeader="toggleHeader" />
-        ) : (
-          <HeaderDetails toggleHeader="displayHeader" />
-        )}
     </div>
   );
 };

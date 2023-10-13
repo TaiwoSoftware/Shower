@@ -91,7 +91,8 @@ nav input:hover {
 }
 
 nav input:focus {
-  cursor: help;
+  /* cursor: help; */
+  cursor:progress;
   border: 1px solid rgba(128, 128, 128, 0.387);
   border-left: none;
   border-right: none;
